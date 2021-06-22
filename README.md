@@ -1,84 +1,57 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/chec/commercejs-examples/master/assets/logo.svg" width="380" height="100" />
-</p>
-<p align="center">
-A Next.js, Commerce.js, Stripe, and Vercel powered, open source storefront, cart and checkout experience.
-</p>
+# ChopChopオンラインストア
 
-<p align="center">
-  <a href="https://github.com/chec/commercejs-chopchop-demo/blob/main/LICENSE.md">
-    <img src="https://img.shields.io/npm/l/@chec/commerce.js.svg" alt="License" />
-  </a>
-  <br>
-  <a href="https://commercejs.com">commercejs.com</a> | <a href="https://twitter.com/commercejs">@commercejs</a> | <a href="http://slack.commercejs.com">Slack</a>
-  <br />
-  <br />
-  <a href="https://commercejs-chopchop-demo.vercel.app">
-    <img src="https://cdn.chec.io/email/assets/marketing/chec-demo-btn_gray.svg" alt="View demo" />
-  </a>
-  <br />
-  <br />
-  <a href="https://commercejs-chopchop-demo.vercel.app">
-    <img src="https://images.ctfassets.net/u77gi3ejnmxq/60D21gkBJHgH9YI3bizA3Q/c81183ac0cccb0ece6547da5021dc8b9/Group_558.png" alt="View demo" width="600" />
-  </a>
-</p>
+ChopChopは、美しいデザインのオンラインストアのデモサイトです。上質なツールを販売するために、洗練されたブランドと、それに見合ったコマース体験を提供します。詳しくは、[Commerce.js blog](https://commercejs.com/blog/chopchop-nextjs-starter-commerce/)をご覧ください。
 
-## Introduction
-
-ChopChop is our beautifully designed, elegantly developed demo store and starter kit that sells fine tools for thoughtful cooks. We’ve created a premium brand with a commerce experience to match. Read more about this resource on the [Commerce.js blog](https://commercejs.com/blog/chopchop-nextjs-starter-commerce/).
-
-
-## 🥞 ChopChop Stack
+## ChopChop が使用しているスタック
 
 * [Next.js](https://nextjs.org/)
 * [Commerce.js](https://commercejs.com)
 * [Tailwind CSS](https://tailwindcss.com/)
 * [Stripe](https://stripe.com)
-* [Vercel](https://vercel.com/)
+* [vercel](https://vercel.com/)
 
-## Live demo
+## デモ
 
-Check out https://commercejs-chopchop-demo.vercel.app to see this project in action.
+以下のURLより、実際に動作するサイトを確認できます。
 
-## Getting started
+https://commercejs-chopchop-demo.stackhacker.vercel.app/
 
-### Use the Chec CLI
+## はじめに
 
-You can use the [Chec CLI](https://github.com/chec/cli) to quickly and easily install demo stores like this, and also
-to install sample data into your account. To install the Chec CLI, run `npm install -g @chec/cli` (or `yarn global add @chec/cli`).
+### Chec CLIの使用
 
-* Navigate to your projects folder: `cd ~/Projects`
-* Install the ChopChop demo store: `chec demo-store`
-  * Choose "Chop Chop demo store (Next.js)" from the list
-  * This will install dependencies and sample data, then start your dev server
-  * Stop the server, open `.env` and add your `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` for using Stripe, then re-run `npm run dev`
-* Open [http://localhost:3000](http://localhost:3000) and get started!
+[Chec CLI](https://github.com/chec/cli)を使用すると、このようなデモサイトを素早く、簡単にインストールしたり、サンプルデータをインストールできます。Chec CLIをインストールするには、`npm install -g @chec/cli`（または`yarn global add @chec/cli`）を実行します。
 
-### Manual installation
+* プロジェクトのディレクトリーに移動します： `cd ~/Projects`
+* ChopChopのデモストアをインストールします： `chec demo-store`
+  * 一覧の中から「Chop Chop demo store (Next.js)」を選択します。
+  * 依存関係とサンプルデータをインストールし、開発サーバーを起動します。
+  * サーバーを停止し、`.env`を開き、Stripeを使用するための`NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`を追加し、`npm run dev`を再実行します。
+* [http://localhost:3000](http://localhost:3000)を開いて、はじめましょう。
 
-Clone the project, then get started by installing the dependencies, and starting the dev server.
+### 手動でのインストール
+
+リポジトリーをクローンし、依存関係をインストールして、dev サーバーを起動します。
 
 ```
 npm install
 npm run dev
 ```
 
-Once the server is running, open it up in your browser, start editing the code, and enjoy!
+サーバーが起動したら、ブラウザーで開いて、コードを編集して、お楽しみください。
 
-### Sample data
+### サンプルデータ
 
-This repository comes with some sample products and images for you to use if you want to get up and running quickly.
+このリポジトリーには、商品や画像のサンプルがいくつか用意されているので、すぐに運用を開始したい方はご利用ください。
 
-To install sample data, first copy `.env.example` to `.env`, then edit `.env` and fill out the
-following variables:
+サンプルデータをインストールするには、まず `.env.example` を `.env` にコピーしてから、`.env` を編集して以下の変数を入力します。
 
-* `NEXT_PUBLIC_CHEC_PUBLIC_API_KEY`: Your Chec public/sandbox API key, available from the Chec Dashboard under
-  Developers > API keys
-* `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`: Your Stripe test publishable key, available from the Stripe dashboard
-* `CHEC_SECRET_KEY`: Your Chec secret API key, used for seeding
-* `NEXT_PUBLIC_GA_TRACKING_ID`: Set this with your Google Analytics ID if you want to enable GA.
+* `NEXT_PUBLIC_CHEC_PUBLIC_API_KEY`： Chec公開APIキー（Checダッシュボードから**DEVELOPER**の**API keys**を参照）
+* `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`： Stripeのテスト用公開キー（Stripeダッシュボードから入手可能）
+* `CHEC_SECRET_KEY`： Chec秘密APIキー（Checダッシュボードから**DEVELOPER**の**API keys**を参照）
+* `NEXT_PUBLIC_GA_TRACKING_ID`： Google Analytics IDです。GAを有効にしたい場合は、Google AnalyticsのIDを設定してください。
 
-Once this is done, save and close your file. You can now run the seeder to install sample data:
+設定が完了したら、ファイルを保存して閉じます。これでシードの実行をすることで、サンプルデータをインストールできます。
 
 ```
 npm run seed
@@ -90,38 +63,43 @@ Added:
   9 assets
 ```
 
-And you're ready to go!
+これで準備ができました。
 
-### Deploying to Vercel (with one click)
+### Vercel へのデプロイ (ワンクリック)
 
-The one-click deploy allows you to add the Vercel application to your GitHub account to clone this repository and deploy it automatically. Be sure to go to [Vercel](https://vercel.com/signup) and sign up for an account with Github, GitLab, or GitBucket before clicking the deploy button.
+ワンクリック・デプロイでは、GitHubアカウントにVercelアプリケーションを追加することで、このリポジトリをクローンして自動的にデプロイできます。デプロイボタンをクリックする前に、必ず[Vercel](https://vercel.com/signup)にアクセスして、Github, GitLab, GitBucket のいずれかのアカウントをサインアップしてください。
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/chec/commercejs-chopchop-demo)
 
-Please make sure that you enter the required environment variables listed above during deployment.
+デプロイ時には、上記の必要な環境変数が入力されていることを確認してください。
 
-#### Caveats for sample data
+#### サンプルデータの注意点
 
-To make your ChopChop experience even better, there are a couple of things you can do that are not included with
-the sample data:
+ChopChopをより快適にお使いいただくために、サンプルデータには含まれていない、いくつかの機能があります。
 
-* **Add related products:** Go into the [Chec Dashboard](https://dashboard.chec.io) and set related products for each
-  of your new products. This helps to provide upsell suggestions on your website.
-* **Set up shipping rates:** Also in the dashboard, set up some shipping zones and rates in Settings > Shipping, then
-  enable them on each of your products. This will enable the "Shipping" checkout screen, and allow you to charge
-  shipping for your customers as well.
+* **関連商品の追加**： [Chec Dashboard](https://dashboard.chec.io)で、新商品のそれぞれに関連商品を設定してください。これにより、ウェブサイトでのアップセールの提案に役立ちます。
+* **配送料の設定**： 同じくダッシュボードの**SETTINGS**→**Shipping**で配送地域と配送料を設定し、各商品で有効にします。これにより、チェックアウト画面に送料を表示し、顧客に送料を請求できるようになります。
 
-## Customizations and Extendability 
+## カスタマイズと拡張性
 
-- Integrate another payment gateway, either one of our supported gateways or your own with our [manual gateway API](https://commercejs.com/docs/guides/manual-payment-integration)
-- Integrate with the Google Calendar API to automatically add ticketed items to a customer’s calendars
-- Suggest products from other sources based on items purchased, i.e. a book on knife skills if you buy the knife set
-- Add [Algolia](https://www.algolia.com/) for integrated search
-- Add additional modules to the checkout flow to handle other content types, like booking a time to pickup in-store purchases
-- Integrate with a headless CMS to make the content editable
-- Create a customers login section using our [customers endpoint](https://commercejs.com/docs/api/#customers)
-- Use webhooks to deliver SMS notifications about orders
+- Chec社がサポートしているゲートウェイ、または[手動ゲートウェイAPI](https://commercejs.com/docs/guides/manual-payment-integration)を使って独自のゲートウェイを統合できます。
+- Google Calendar APIを利用して、チケットを購入した商品を顧客のカレンダーに自動的に追加できます。
+- 購入した商品に基づいて、他のソースから商品を提案する（例：ナイフセットを購入したら、ナイフのスキルに関する本を提案する）
+- [Algolia](https://www.algolia.com/)を検索に追加
+- チェックアウト・フローにモジュールを追加して、店舗での購入品の受け取り時間の予約など、他のコンテンツタイプを処理する
+- ヘッドレスCMSと統合し、コンテンツを編集可能にする。
+- [顧客エンドポイント](https://commercejs.com/docs/api/#customers)を使って、顧客がログインできるようにする。
+- webhooksを使って、注文に関するSMS通知を配信する。
 
-## License
+## ライセンス
 
-This project is licensed under [BSD-3-Clause](LICENSE.md).
+オリジナルのリポジトリーは下記になります。
+
+https://github.com/chec/commercejs-chopchop-demo
+
+
+このプロジェクトはオリジナル同様に[BSD-3-Clause](LICENSE.md)でライセンスされています。
+
+## 注意事項
+
+コード自体のローカライズはWIPです。また、準備でき次第公開して参ります。
