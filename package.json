@@ -12,7 +12,7 @@
     "@chec/commerce.js": "2.2.0",
     "@hookform/error-message": "1.1.0",
     "@stripe/react-stripe-js": "1.2.2",
-    "@stripe/stripe-js": "1.11.0",
+    "@stripe/stripe-js": "1.15.1",
     "autoprefixer": "10.2.6",
     "classcat": "5.0.3",
     "framer-motion": "2.9.4",
