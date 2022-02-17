@@ -20,7 +20,7 @@
     "css-what": "^5.0.1",
     "framer-motion": "2.9.4",
     "glob-parent": "^6.0.1",
-    "next": "10.0.2",
+    "next": "12.1.0",
     "next-google-fonts": "1.2.1",
     "postcss": "8.3.5",
     "react": "17.0.1",
