@@ -18,7 +18,7 @@
     "browserslist": "^4.16.6",
     "classcat": "5.0.3",
     "css-what": "^5.0.1",
-    "framer-motion": "2.9.4",
+    "framer-motion": "6.3.6",
     "glob-parent": "^6.0.1",
     "next": "10.0.2",
     "next-google-fonts": "1.2.1",
